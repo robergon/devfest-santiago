@@ -5,7 +5,7 @@
 ### 0.1. Introduction
 
 ### 0.2. Requirements
-- Docker & Docker Compose
+- Docker
 - git
 - GitHub account 
 - Optional (but recommended): [k6](https://k6.io/docs/get-started/installation/)
@@ -20,12 +20,12 @@
 
 First of all, clone the repository: 
 ```bash
-git clone https://github.com/dgzlopes/pulpocon
+git clone https://github.com/dgzlopes/devfest-santiago
 ```
 
 Then, run the playground with:
 ```bash
-cd pulpocon; docker-compose up -d
+cd devfest-santiago; docker compose up -d
 ```
 
 To verify everything is working, go to http://localhost:3333 and click the big button. 
