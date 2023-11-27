@@ -1,4 +1,5 @@
-# DevFest Santiago de Compostela Workshop: Full-stack Performance Testing with Grafana k6
+# Full-stack Performance Testing with Grafana k6
+>  Workshop: DevFest Santiago de Compostela
 
 ##  0. Before we start
 
