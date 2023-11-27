@@ -14,7 +14,7 @@
     - Also, it is just a binary, so you can easily remove it afterward if you don't want it.
   - If you plan to use Docker, please, pre-pull the images with:
     - `docker pull grafana/k6`
-    - `docker pull grafana/k6:master-with-browser`
+    - `docker pull grafana/k6:0.47.0-with-browser`
 
 ###  0.3.  Run the local playground
 
