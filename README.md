@@ -25,13 +25,13 @@ Useful links: [Slides](https://docs.google.com/presentation/d/18UYpWkTqb8m01kiZx
   * [a. GitHub Actions](#a-github-actions)
   * [b. Other CI providers](#b-other-ci-providers)
 - [3. Advanced](#3-advanced)
-  * [2.1. Scenarios](#21-scenarios)
-  * [2.2. Modules](#22-modules)
-  * [2.3. More stuff](#23-more-stuff)
-    + [2.3.1 Browser](#231-browser)
-    + [2.3.2. Composability](#232-composability)
-    + [2.3.3. Extensions](#233-extensions)
-    + [2.3.4. WebSockets](#234-websockets)
+  * [3.1. Scenarios](#31-scenarios)
+  * [3.2. Modules](#32-modules)
+  * [3.3. More stuff](#33-more-stuff)
+    + [3.3.1 Browser](#331-browser)
+    + [3.3.2. Composability](#332-composability)
+    + [3.3.3. Extensions](#333-extensions)
+    + [3.3.4. WebSockets](#334-websockets)
 - [4. More things](#4-more-things)
   * [4.1. Grafana Cloud k6](#41-grafana-cloud-k6)
   * [4.2. Fault Injection](#42-fault-injection)
@@ -584,7 +584,7 @@ We have guides for many of them. You can check them out [here](https://k6.io/doc
 
 ## 3. Advanced
 
-### 2.1. Scenarios
+### 3.1. Scenarios
 
 Scenarios configure how VUs and iteration are executed in a more fine-grained way. With scenarios, you can model diverse workloads, or traffic patterns in your tests.
 
@@ -629,7 +629,7 @@ Let's change our script to use scenarios and rerun the test. If you are running 
 
 You can learn more about scenarios [in our docs](https://k6.io/docs/using-k6/scenarios/).
 
-### 2.2. Modules
+### 3.2. Modules
 
 k6 provides many built-in modules for core functionalities. For example, the http client make requests against the system under test. For the full list of built-in modules, refer to the [API documentation](https://k6.io/docs/javascript-api/).
 
@@ -667,9 +667,9 @@ docker run -i --network=devfest-santiago_default -v $(pwd)/utils.js:/utils.js gr
 
 You can learn more about modules [in our docs](https://k6.io/docs/using-k6/modules/).
 
-### 2.3. More stuff
+### 3.3. More stuff
 
-#### 2.3.1 Browser
+#### 3.3.1 Browser
 
 Even though we have been using HTTP requests so far, k6 is not limited to that. You can use it to test all kinds of things! It natively supports other protocols like gRPC, WebSockets, and Redis - and you can extend it to support more (we chat a bit about extensions later on!).
 
@@ -745,7 +745,7 @@ Also, you should be able to see the Checks we have defined in the output. Plus, 
 
 You can learn more about the Browser APIs [in our docs](https://k6.io/docs/using-k6-browser/overview/).
 
-#### 2.3.2. Composability
+#### 3.3.2. Composability
 
 In k6, you can mix and match the features you need to test what you really need to test.
 
@@ -839,7 +839,7 @@ That's it. Now, you should be able to run it as you would do with any test, and 
 
 You can read more about that scenario in [this section](https://k6.io/docs/using-k6-browser/running-browser-tests/#run-both-browser-level-and-protocol-level-tests-in-a-single-script) of our docs.
 
-#### 2.3.3. Extensions
+#### 3.3.3. Extensions
 
 With k6 extensions, you can create custom k6 binaries to support your specific reliability-testing needs. These are written in Go and can be used to extend k6 with new protocols, outputs, etc. For example, you could create an extension to support a new protocol, like Kafka. Or, you could make an extension to export your metrics to a new backend, like InfluxDB.
 
@@ -849,7 +849,7 @@ Once you have an extension you want to try, you can easily build a new k6 binary
 
 If you want to learn more about extensions, you can [check our docs](https://k6.io/docs/extensions/). If you want to create your own (spoiler: it is pretty easy), you can read this [little guide](https://k6.io/docs/extensions/get-started/create/).
 
-#### 2.3.4. WebSockets
+#### 3.3.4. WebSockets
 
 Before, we mentioned that k6 supports WebSockets. QuickPizza also has a WebSockets endpoint.
 
